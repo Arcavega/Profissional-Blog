@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block conteudo %}
+
+<div class="container-fluid">
+    
+    <h1 class="mt-4">Estágio</h1>
+    <p>Olá, meu nome é Ariel Carlos Veríssimo Gadelha</p>
+    {% for e in x %}
+        <p>{{ e.texto1 }}</p>
+    {% endfor %}
+</div>
+
+
+
+{% endblock %}

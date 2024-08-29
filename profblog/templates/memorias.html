@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block conteudo %}
+
+<div class="container-fluid">
+    
+    <h1 class="mt-4">Memórias</h1>
+    <p>Olá, meu nome é Ariel Carlos Veríssimo Gadelha</p>
+    {% for m1 in x %}
+        <p>{{ m1.texto1 }}</p>
+        <img class="img-fluid" src="{{ m1.foto.url }}" alt="{{ m1.texto1 }}" />
+    {% endfor %}
+    
+</div>
+
+
+
+{% endblock %}
